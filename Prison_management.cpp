@@ -560,9 +560,9 @@ void Prison ::SearchPrison()
         cout << "\t\t\t\t";
         cout << "invalid cell id" << endl;
     }
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t";
     cout << "Press 1 to return : ";
     cin >> s;
@@ -579,7 +579,7 @@ void Prison ::PrisonFile()
 
     int format, a;
     int s, c = 0, p = 0;
-    cout << "\n\n\n";
+    cout << endl<<endl<<endl;
     cout << "\t\t\t\t-----------------------------------------------------------------" << endl;
     for (a = 0; a <= 100000000; a++)
     {
@@ -602,9 +602,9 @@ void Prison ::PrisonFile()
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t";
     cout << "In which format you want to open your file? ";
     cin >> format;
@@ -615,9 +615,9 @@ void Prison ::PrisonFile()
         Time();
         system("cls");
         cout << "\t\t\t\t\t";
-        cout << "\n";
+        cout << endl;
         cout << "\t\t\t\t\t";
-        cout << "\n\n\n\n\n";
+        cout << endl<<endl<<endl<<endl<<endl;
         cout << "\t\t\t\t    -----------------------------------------------------\n";
         cout << "\t\t\t\t    |                                                   |\n";
         cout << "\t\t\t\t    |        Txt File created successfully              |\n";
@@ -627,9 +627,9 @@ void Prison ::PrisonFile()
         MyFile_.open("Prison_Data.txt");
 
         MyFile_ << "\t\t\t\t    -----------------------------------------------------\n";
-        MyFile_ << "\t\t\t\t    |                                                                            |\n";
-        MyFile_ << "\t\t\t\t    |                Prisoner list                                     |\n";
-        MyFile_ << "\t\t\t\t    |                                                                            |\n";
+        MyFile_ << "\t\t\t\t    |                                                   |\n";
+        MyFile_ << "\t\t\t\t    |                Prisoner list                      |\n";
+        MyFile_ << "\t\t\t\t    |                                                   |\n";
         MyFile_ << "\t\t\t\t    -----------------------------------------------------\n";
 
         MyFile_ << "\n\t\t\t\t\t";
@@ -644,7 +644,7 @@ void Prison ::PrisonFile()
             {
                 p++;
                 MyFile_ << p << "\t" << First_Name[x] << "" << Second_Name[x] << "\t\t" << CellNo[x] << "\t" << Age[x] << "\t\t" << Gender[x] << "\t" << Height[x] << "\t\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
-                MyFile_ << "\n"
+                MyFile_ << endl
                         << endl;
                 c++;
             }
@@ -653,7 +653,7 @@ void Prison ::PrisonFile()
         {
             MyFile_ << "\n\t\t\t\t\t";
             MyFile_ << "No prisoner Present";
-            MyFile_ << "\n";
+            MyFile_ << endl;
             MyFile_ << "\t\t\t\t\t";
         }
         MyFile_.close();
@@ -663,9 +663,9 @@ void Prison ::PrisonFile()
         Time();
         system("cls");
         cout << "\t\t\t\t\t";
-        cout << "\n";
+        cout << endl;
         cout << "\t\t\t\t\t";
-        cout << "\n\n\n\n\n";
+        cout << endl<<endl<<endl<<endl<<endl;
         cout << "\t\t\t\t    -----------------------------------------------------\n";
         cout << "\t\t\t\t    |                                                   |\n";
         cout << "\t\t\t\t    |          Word File created successfully           |\n";
@@ -675,40 +675,40 @@ void Prison ::PrisonFile()
         MyFile_.open("Prison_Data.doc");
 
         MyFile_ << "\t\t\t *** Prisoner list *** ";
-        MyFile_ << "\n";
+        MyFile_ << endl;
 
         for (int x = 0; x <= 19; x++)
         {
             if (First_Name[x] != " ")
             {
                 MyFile_ << "First name: " << First_Name[x];
-                MyFile_ << "\n";
+                MyFile_ << endl;
                 MyFile_ << "Second name: " << Second_Name[x];
-                MyFile_ << "\n";
+                MyFile_ << endl;
                 MyFile_ << "Cell number: " << CellNo[x];
-                MyFile_ << "\n";
+                MyFile_ << endl;
                 MyFile_ << "Age: " << Age[x];
-                MyFile_ << "\n";
+                MyFile_ << endl;
                 MyFile_ << "Gender: " << Gender[x];
-                MyFile_ << "\n";
+                MyFile_ << endl;
                 MyFile_ << "Height: " << Height[x];
-                MyFile_ << "\n";
+                MyFile_ << endl;
                 MyFile_ << "Eye colour: " << Eyecolor[x];
-                MyFile_ << "\n";
+                MyFile_ << endl;
                 MyFile_ << "Crime: " << Crime[x];
-                MyFile_ << "\n";
+                MyFile_ << endl;
                 MyFile_ << "Punishment Months: " << Punishmentmonths[x];
-                MyFile_ << "\n";
-                MyFile_ << "\n";
+                MyFile_ << endl;
+                MyFile_ << endl;
                 c++;
             }
         }
         if (c == 0)
         {
 
-            MyFile_ << "\n\t\t\t\t";
+            MyFile_ <<endl<< "\t\t\t\t";
             MyFile_ << "No prisoner Present";
-            MyFile_ << "\n";
+            MyFile_ << endl;
             MyFile_ << "\t\t\t\t\t";
         }
         MyFile_.close();
@@ -718,12 +718,12 @@ void Prison ::PrisonFile()
         break;
     }
 
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Press 1 to return : ";
-    scanf("%d", &s);
+    cin>>s;
     if (s == 1)
     {
         Prison::Afterlogin();
@@ -739,7 +739,7 @@ void Prison ::Afterlogin()
         v = 0;
         system("cls");
         Time();
-        cout << "\n\n\n";
+        cout << endl<<endl<<endl;
         cout << "\t\t\t\t---------------------------------------------------------------------------\n";
         for (a = 0; a <= 100000000; a++)
         {
@@ -796,9 +796,9 @@ void Prison ::Afterlogin()
         for (a = 0; a <= 100000000; a++)
         {
         }
-        cout << "\n";
+        cout <<endl;
         cout << "\t\t\t\t\t\t\t";
-        cout << "\n";
+        cout << endl;
         cout << "\t\t\t\t\t\t\t";
         cout << "Enter your choice : ";
         cin >> c;
@@ -851,7 +851,7 @@ void Date()
     time_t T = time(NULL);
     struct tm tm = *localtime(&T);
     cout << "\n\n\n";
-    cout << "\t\t\t\t\t   Date: " << tm.tm_mday << "/" << tm.tm_mon + 1 << "/" << tm.tm_year + 1900 << "\n";
+    cout << "\t\t\t\t\t   Date: " << tm.tm_mday << "/" << tm.tm_mon + 1 << "/" << tm.tm_year + 1900 << endl;
 }
 
 void Time()
@@ -869,7 +869,7 @@ void FrontPage()
     system("cls");
     Time();
     Date();
-    cout << "\n";
+    cout << endl;
     int a;
     for (a = 0; a <= 100000000; a++)
     {
@@ -886,7 +886,7 @@ void FrontPage()
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\n\n";
+    cout << endl<<endl;
     cout << "\t\t\t\t";
     for (a = 0; a <= 100000000; a++)
     {
@@ -901,10 +901,17 @@ void FrontPage()
     {
     }
     cout << "   Prison Management System";
-    cout << "\n\n";
+    cout << endl<<endl;
     cout << "\t\t\t\t";
-    cout << "\n\n";
-    cout << "\n\n";
+    cout << endl<<endl;
+    cout << "\t\t\t\t";
+    cout<<"Major Contributers:"<<endl;
+    cout << "\t\t\t\t Binay Shrestha(790403)";
+    cout << "\t\t\t\tPratistha Prajapati(790413)";
+    cout << "\t\t\t\tRajeev Suwal(790414)";
+     cout << endl<<endl;
+    cout << "\t\t\t\t";
+    cout << endl<<endl;
     cout << "\t\t\t\t";
     system("pause");
     cout << "\n\t\t\t\tLoading";
