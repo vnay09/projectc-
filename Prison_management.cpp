@@ -117,7 +117,7 @@ void Prison::Login()
                         }
             }
 
-            if (strcmp(username, "admin") == 0 && strcmp(password, "hello") == 0)
+            if (strcmp(username, "admin") == 0 && strcmp(password, "qwertyuiop") == 0)
             {
                 cout << endl << endl;
                 cout << "\t\t\t\t\t";
