@@ -1,7 +1,5 @@
 
 
-// username = admin
-// password = pass
 
 #include <iostream>
 #include <conio.h>
@@ -71,7 +69,7 @@ void Prison::Login()
         do
         {
             system("cls");
-            time();
+            Time();
             cout << endl << endl;
             for (int a = 0; a <= 100000000; a++)
                 {
@@ -129,7 +127,7 @@ void Prison::Login()
                 system("cls");
                 state = 0;
                 attempt = 4;
-                        library :: afterlogin();
+                            Prison :: Afterlogin();
             }
             else
             {
@@ -148,7 +146,7 @@ void Prison::Login()
                             cout << "\t\t\t\t\t";
                                 cout << "Attempt permission had been terminated permamently for 24 hours!!";
                             system("pause");
-                            exit();
+                            exit(1);
 
                         }
             }
@@ -163,65 +161,65 @@ void Prison ::SetData()
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t    -----------------------------------------------------\n";
+    cout << "\t\t\t\t    -----------------------------------------------------" << endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t    |                                                   |\n";
-    cout << "\t\t\t\t    |         Enter basic information of prisoner       |\n";
-    cout << "\t\t\t\t    |                                                   |\n";
+    cout << "\t\t\t\t    |                                                   |"<< endl;
+    cout << "\t\t\t\t    |         Enter basic information of prisoner       |" << endl;
+    cout << "\t\t\t\t    |                                                   |" << endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t    -----------------------------------------------------\n";
+    cout << "\t\t\t\t    -----------------------------------------------------" << endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\n\n";
+    cout << endl << endl;
     cout << "\t\t\t\t\t";
     cout << "Enter first name : ";
     cin >> First_Name[o];
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Enter second name : ";
     cin >> Second_Name[o];
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Enter gender : ";
     cin >> Gender[o];
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Enter age : ";
     cin >> Age[o];
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Enter height : ";
     cin >> Height[o];
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout<< endl;
     cout << "\t\t\t\t\t";
     cout << "Enter eyecolor : ";
     cin >> Eyecolor[o];
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Enter crime : ";
     cin >> Crime[o];
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Enter punishment span in months : ";
     cin >> Punishmentmonths[o];
     cout << "\t\t\t\t\t";
-    cout << "\n\n\n";
+    cout << endl << endl << endl;
     cout << "\t\t\t\t\t";
     cout << "Your Cell No is " << CellNo[o];
-    cout << "\n\t\t\t\t\t";
-    cout << "\n";
+    cout << endl <<  "\t\t\t\t\t";
+    cout << endl;
     cout << "\t\t\t\t\t";
     o = o + 1;
     cout << "Press 1 to return : ";
@@ -240,17 +238,17 @@ void Prison ::Details()
     for (t = 0; t <= 100000000; t++)
     {
     }
-    cout << "\t\t\t\t    -----------------------------------------------------\n";
+    cout << "\t\t\t\t    -----------------------------------------------------"<< endl;
     for (t = 0; t <= 100000000; t++)
     {
     }
-    cout << "\t\t\t\t    |                                                   |\n";
-    cout << "\t\t\t\t    |                Prisoner list                      |\n";
-    cout << "\t\t\t\t    |                                                   |\n";
+    cout << "\t\t\t\t    |                                                   |"<< endl;
+    cout << "\t\t\t\t    |                Prisoner list                      |"<< endl;
+    cout << "\t\t\t\t    |                                                   |"<< endl;
     for (t = 0; t <= 100000000; t++)
     {
     }
-    cout << "\t\t\t\t    -----------------------------------------------------\n";
+    cout << "\t\t\t\t    -----------------------------------------------------"<< endl;
     for (t = 0; t <= 100000000; t++)
     {
     }
@@ -258,9 +256,9 @@ void Prison ::Details()
 
     cout << "\n\t\t\t\t\t";
 
-    cout << "\n===========================================================================================================\n";
-    cout << "SN.\tNAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment\n";
-    cout << "===========================================================================================================\n";
+    cout << endl << "===========================================================================================================" << endl;
+    cout << "SN.\tNAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
+    cout << "==========================================================================================================="<< endl;
 
     for (int x = 0; x <= 19; x++)
     {
@@ -268,21 +266,20 @@ void Prison ::Details()
         {
             p++;
             cout << p << "\t" << First_Name[x] << "" << Second_Name[x] << "\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
-            cout << "\n"
-                 << endl;
+            cout << endl << endl;
             c++;
         }
     }
     if (c == 0)
     {
-        cout << "\n\t\t\t\t\t";
+        cout << endl << "\t\t\t\t\t";
         cout << "No prisoner Present";
-        cout << "\n";
+        cout << endl;
         cout << "\t\t\t\t\t";
     }
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Press 1 to return : ";
     cin >> s;
@@ -305,54 +302,53 @@ void Prison ::Attendance()
         for (t = 0; t <= 100000000; t++)
         {
         }
-        cout << "\t\t\t\t    -----------------------------------------------------\n";
+        cout << "\t\t\t\t    -----------------------------------------------------" << endl;
         for (t = 0; t <= 100000000; t++)
         {
         }
-        cout << "\t\t\t\t    |                                                   |\n";
-        cout << "\t\t\t\t    |           Prisoner attendance maintainer          |\n";
-        cout << "\t\t\t\t    |                                                   |\n";
+        cout << "\t\t\t\t    |                                                   |" << endl;
+        cout << "\t\t\t\t    |           Prisoner attendance maintainer          |" << endl;
+        cout << "\t\t\t\t    |                                                   |" << endl;
         for (t = 0; t <= 100000000; t++)
         {
         }
-        cout << "\t\t\t\t    -----------------------------------------------------\n";
+        cout << "\t\t\t\t    -----------------------------------------------------" << endl;
         for (t = 0; t <= 100000000; t++)
         {
         }
 
-        cout << "\n\t\t\t\t\t";
-        cout << "\n===========================================================================================================\n";
-        cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment\n";
-        cout << "===========================================================================================================\n";
+        cout << endl << "\t\t\t\t\t";
+        cout << endl << "===========================================================================================================" << endl;
+        cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
+        cout << "===========================================================================================================" << endl;
         for (int x = 0; x <= 19; x++)
         {
             if (First_Name[x] != " ")
             {
                 cout << First_Name[x] << "" << Second_Name[x] << "\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
-                cout << "\n"
-                     << endl;
+                cout << endl << endl;
                 c++;
             }
         }
         if (c != 0)
         {
-            cout << "\n\t\t\t\t\t";
+            cout << endl << "\t\t\t\t\t";
             cout << "Enter the cell  block of the prisoner :";
             cin >> l;
             l = l - 1001;
-            cout << "\n\t\t\t\t\t";
+            cout << endl <<  "\t\t\t\t\t";
             cout << "Name : ";
             cout << First_Name[l] << " " << Second_Name[l];
             Punishmentmonths[l]--;
-            cout << "\n\t\t\t\t\t";
+            cout << endl << "\t\t\t\t\t";
             cout << "Punishment for :" << Punishmentmonths[l] << " months";
             if (Punishmentmonths[l] <= 0)
             {
-                cout << "\n\t\t\t\t\t";
+                cout << endl <<"\t\t\t\t\t";
                 cout << "Prisoner is ready for release";
             }
-            cout << "\n\n";
-            cout << "\n\t\t\t\t\t";
+            cout << endl << endl;
+            cout << endl << "\t\t\t\t\t";
             cout << "Press y to choose another prisoner and press n to exit :";
             cin >> ch;
         }
@@ -360,25 +356,25 @@ void Prison ::Attendance()
         {
             int a;
             cout << "\t\t\t\t\t";
-            cout << "\n";
+            cout << endl;
             cout << "\t\t\t\t\t";
             for (a = 0; a <= 100000000; a++)
             {
             }
-            cout << "\t\t\t\t                                                    \n";
-            cout << "\t\t\t\t    ------------------------------------------------\n";
+            //cout << "\t\t\t\t                                                    " << endl;
+            cout << "\t\t\t\t    ------------------------------------------------" << endl;
             for (a = 0; a <= 100000000; a++)
             {
             }
-            cout << "\t\t\t\t    |             No prisoners present             |\n";
+            cout << "\t\t\t\t    |             No prisoners present             |" << endl;
             for (a = 0; a <= 100000000; a++)
             {
             }
-            cout << "\t\t\t\t    ------------------------------------------------\n";
+            cout << "\t\t\t\t    ------------------------------------------------" << endl;
         }
 
     } while (ch == 'y');
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Press 1 to return : ";
     cin >> s;
@@ -400,33 +396,32 @@ void Prison ::Release()
         for (t = 0; t <= 100000000; t++)
         {
         }
-        cout << "\t\t\t\t    -----------------------------------------------------\n";
+        cout << "\t\t\t\t    -----------------------------------------------------" << endl;
         for (t = 0; t <= 100000000; t++)
         {
         }
-        cout << "\t\t\t\t    |                                                   |\n";
-        cout << "\t\t\t\t    |                Release prisoner                   |\n";
-        cout << "\t\t\t\t    |                                                   |\n";
+        cout << "\t\t\t\t    |                                                   |" << endl;
+        cout << "\t\t\t\t    |                Release prisoner                   |" << endl;
+        cout << "\t\t\t\t    |                                                   |" << endl;
         for (t = 0; t <= 100000000; t++)
         {
         }
-        cout << "\t\t\t\t    -----------------------------------------------------\n";
+        cout << "\t\t\t\t    -----------------------------------------------------" << endl;
         for (t = 0; t <= 100000000; t++)
         {
         }
 
-        cout << "\n\t\t\t\t\t";
-        cout << "\n===========================================================================================================\n";
-        cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment\n";
-        cout << "===========================================================================================================\n";
+        cout << endl << "\t\t\t\t\t";
+        cout << endl <<"===========================================================================================================" << endl;
+        cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
+        cout << "===========================================================================================================" << endl;
 
         for (int x = 0; x <= 19; x++)
         {
             if (First_Name[x] != " ")
             {
                 cout << First_Name[x] << "" << Second_Name[x] << "\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
-                cout << "\n"
-                     << endl;
+                cout << endl << endl;
                 c++;
             }
         }
@@ -436,15 +431,15 @@ void Prison ::Release()
             cout << "Enter the cell block of the prisoner :";
             cin >> l;
             l = l - 1001;
-            cout << "\n\t\t\t\t\t";
+            cout << endl << "\t\t\t\t\t";
             cout << "Name : ";
             cout << First_Name[l] << " " << Second_Name[l];
-            cout << "\n\t\t\t\t\t";
+            cout << endl <<"\t\t\t\t\t";
             if (Punishmentmonths[l] <= 0)
             {
-                cout << "\n\t\t\t\t\t";
+                cout << endl <<"\t\t\t\t\t";
                 cout << "Prisoner is ready for release";
-                cout << "\n\t\t\t\t\t";
+                cout << endl <<"\t\t\t\t\t";
                 cout << "Press 1 to release the prisoner :";
                 cin >> r;
                 if (r == 1)
@@ -456,7 +451,7 @@ void Prison ::Release()
                     Height[l] = 0;
                     Eyecolor[l] = " ";
                     Punishmentmonths[l] = 0;
-                    cout << "\n\t\t\t\t\tProcessing";
+                    cout << endl <<"\t\t\t\t\tProcessing";
 
                     for (int process = 0; process < 7; process++)
                     {
@@ -465,18 +460,18 @@ void Prison ::Release()
                         }
                         cout << ".";
                     }
-                    cout << "\n\t\t\t\t\t";
+                    cout << endl <<"\t\t\t\t\t";
                     cout << "Prisoner released successfully";
                 }
             }
             else
             {
-                cout << "\n\t\t\t\t\t";
+                cout << endl <<"\t\t\t\t\t";
                 cout << "Prisoner is not ready for release";
             }
 
-            cout << "\n\n";
-            cout << "\n\t\t\t\t\t";
+            cout << endl << endl;
+            cout << endl <<"\t\t\t\t\t";
             cout << "Press y to choose another prisoner and press n to exit :";
             cin >> ch;
         }
@@ -484,25 +479,25 @@ void Prison ::Release()
         {
             int a;
             cout << "\t\t\t\t\t";
-            cout << "\n";
+            cout << endl;
             cout << "\t\t\t\t\t";
             for (a = 0; a <= 100000000; a++)
             {
             }
-            cout << "\t\t\t\t                                                    \n";
-            cout << "\t\t\t\t    ------------------------------------------------\n";
+            //cout << "\t\t\t\t                                                    " << endl;
+            cout << "\t\t\t\t    ------------------------------------------------" << endl;
             for (a = 0; a <= 100000000; a++)
             {
             }
-            cout << "\t\t\t\t    |             No prisoners present             |\n";
+            cout << "\t\t\t\t    |             No prisoners present             |" << endl;
             for (a = 0; a <= 100000000; a++)
             {
             }
-            cout << "\t\t\t\t    ------------------------------------------------\n";
+            cout << "\t\t\t\t    ------------------------------------------------" << endl;
             break;
         }
     } while (ch == 'y');
-    cout << "\n";
+    cout << endl;
     cout << "\t\t\t\t\t";
     cout << "Press 1 to return : ";
     cin >> s;
@@ -519,26 +514,26 @@ void Prison ::SearchPrison()
     int c = 0, p = 0;
 
     system("cls");
-    cout << "\t\t\t\t    ----------------------------------------\n";
+    cout << "\t\t\t\t    ----------------------------------------" << endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t    |             Search Menu              |\n";
+    cout << "\t\t\t\t    |             Search Menu              |" << endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t    ----------------------------------------\n";
+    cout << "\t\t\t\t    ----------------------------------------" << endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\n\n";
+    cout << endl << endl;
     cout << "\t\t\t\t";
     cout << "Enter the prisoner cell id to be searched : ";
     cin >> CN;
-    cout << "\n\t\t\t\t";
-    cout << "\n===========================================================================================================\n";
-    cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment\n";
-    cout << "===========================================================================================================\n";
+    cout << endl <<"\t\t\t\t";
+    cout << endl << "===========================================================================================================" << endl;
+    cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
+    cout << "===========================================================================================================" << endl;
     l = CN - 1001;
     info = CellNo[l];
     if (CN == info)
@@ -546,23 +541,22 @@ void Prison ::SearchPrison()
         if (First_Name[l] != " ")
         {
             cout << First_Name[l] << "" << Second_Name[l] << "\t\t" << CellNo[l] << "\t\t" << Age[l] << "\t" << Gender[l] << "\t" << Height[l] << "\t" << Eyecolor[l] << "\t\t" << Crime[l] << "\t\t" << Punishmentmonths[l] << endl;
-            cout << "\n"
-                 << endl;
+            cout << endl << endl;
         }
         else
         {
-            cout << "\n";
+            cout << endl;
             cout << "\t\t\t\t";
-            cout << "\n";
+            cout << endl;
             cout << "\t\t\t\t";
             cout << "cell block empty" << endl;
         }
     }
     else
     {
-        cout << "\n";
+        cout << endl;
         cout << "\t\t\t\t";
-        cout << "\n";
+        cout << endl;
         cout << "\t\t\t\t";
         cout << "invalid cell id" << endl;
     }
