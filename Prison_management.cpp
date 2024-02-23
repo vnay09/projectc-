@@ -5,15 +5,15 @@
 
 #include <iostream>
 #include <conio.h>
-#include <string.h>
+#include <string>
 #include <windows.h>
 #include <fstream>
 #include <ctime>
 using namespace std;
 
-void FrontPage(); // Front Page Or Main Page
-void Date();      // Getting Date
-void Time();      // Display time
+void FrontPage();
+void Date();      
+void Time();      
 
 class Prison
 {
@@ -31,16 +31,16 @@ private:
     int o = 0;
 
 public:
-    void SetData();      // Set data of the prisoners
-    void Details();      // Getting details of the prisoners
-    void Afterlogin();   // After login page OR Menu function
-    void Attendance();   // Storing attendace of the prisoners
-    void Release();      // Release the prisoners
-    void SearchPrison(); // Search Prison
-    void PrisonFile();   // Priosn File
-    void Logout();       // Logout
-    void Exit();         // Exit function
-    void Login();        //login
+    void SetData();     
+    void Details();      
+    void Afterlogin();   
+    void Attendance();   
+    void Release();      
+    void SearchPrison(); 
+    void PrisonFile();   
+    void Logout();      
+    void Exit();         
+    void Login();        
 };
 
 void Prison::Logout()
@@ -62,98 +62,97 @@ void Prison::Logout()
 void Prison::Login()
 {
 
-    char Username[15];
-    char Password[15];
-    char Epwd;
-    int true1 = 1;
-    int try1 = 0;
-    int i = 0;
+    char username[25];
+    char password[25];
+    char temppass;
+    int attempt = 0;
+    int state = 0;
 
-    do
-    {
-        system("cls");
-        Time();
-        cout << "\n\n\n\n\n\n";
-        int a;
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
-        cout << "\t\t\t\t    ----------------------------------------\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
-        cout << "\t\t\t\t    |   PRISON STATION MANAGEMENT SYSTEM   |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
-        cout << "\t\t\t\t    ----------------------------------------\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
-        cout << "\n\n";
-        cout << "\t\t\t\t\t";
-        cout << "Username : ";
-        cin >> Username;
-        cout << "\t\t\t\t\t";
-        cout << "\n";
-        cout << "\t\t\t\t\t";
-        cout << "Password : ";
-        for (i = 0;;)
-        {
-            Epwd = getch();
-            if ((Epwd >= 'a' && Epwd <= 'z') || (Epwd >= 'A' && Epwd <= 'Z') || (Epwd >= '0' && Epwd <= '9'))
-            {
-                Password[i] = Epwd;
-                ++i;
-                cout << "*";
-            }
-            if (Epwd == '\b' && i >= 1)
-            {
-                cout << "\b \b";
-                --i;
-            }
-            if (Epwd == '\r')
-            {
-                Password[i] = '\0';
-                break;
-            }
-        }
-
-        if (strcmp(Username, "admin") == 0 && strcmp(Password, "pass") == 0)
-        {
-            cout << "\n\n";
-            cout << "\t\t\t\t";
-            cout << "You are accessed to the system!\n\n";
-            cout << "\t\t\t\t";
-            system("pause");
-            system("cls");
-            true1 = 0;
-            try1 = 4;
-            Prison::Afterlogin();
-        }
-        else
+        do
         {
             system("cls");
-            try1 = try1 + 1;
-            cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+            time();
+            cout << endl << endl;
+            for (int a = 0; a <= 100000000; a++)
+                {
+                }
+                    cout << "\t\t\t\t    ----------------------------------------\n";
+            for (int a = 0; a <= 100000000; a++)
+                {
+                }
+                    cout << "\t\t\t\t    |       LIBRARY MANAGEMENT SYSTEM      |\n";
+            for (int a = 0; a <= 100000000; a++)
+                {
+                }
+                    cout << "\t\t\t\t    ----------------------------------------\n";
+            for (int a = 0; a <= 100000000; a++)
+                {
+                }
+                    cout << "\n\n";
+                
             cout << "\t\t\t\t\t";
-            cout << "No. of attempts remain: " << 3 - try1;
-            cout << "\n\n";
-            cout << "\t\t\t\t";
-            system("pause");
 
-            if (try1 >= 3)
+            cout << "Username : ";
+            cin >> username;
+            cout << endl;
+            cout << "\t\t\t\t\t";
+            cout << "Password : ";
+    int i;
+            for (i = 0;    ;    )
             {
-                cout << "\t\t\t\t\t\t";
-                cout << "\n";
-                cout << "\t\t\t\t";
-                cout << "No permission to enter the system!\n\n";
+                cin >> temppass;
+                    if((temppass >= 'a' && temppass <= 'z') || (temppass >= 'A' && temppass <= 'Z') || (temppass >= '0' &&  temppass <= '9'))
+                        {
+                            password[i] = temppass;
+                            i++;
+                            cout << "*";
+                        }
+                    if (temppass == '\b' && i >=1)
+                        {
+                        cout << "\b \b";
+                        --i;
+                        }
+                    if(temppass == '\r')
+                        {
+                            password[i] = '\0';
+                            break;
+                        }
+            }
+
+            if (strcmp(username, "admin") == 0 && strcmp(password, "hello") == 0)
+            {
+                cout << endl << endl;
+                cout << "\t\t\t\t\t";
+                cout << "You are accessed to the system!\n\n";
                 cout << "\t\t\t\t";
                 system("pause");
-                exit;
+                system("cls");
+                state = 0;
+                attempt = 4;
+                        library :: afterlogin();
             }
-        }
-    } while (try1 < 3);
+            else
+            {
+                system("cls");
+                    attempt += 1;
+                    cout << endl << endl;
+                    cout << "\t\t\t\t\t";
+                        cout << "No. of attempts remain: " << 3 - attempt;
+                    cout << endl << endl;
+                    cout << "\t\t\t\t\t";
+                    system("pause");
+
+                        if (attempt >= 3)
+                        {
+                            cout << endl;
+                            cout << "\t\t\t\t\t";
+                                cout << "Attempt permission had been terminated permamently for 24 hours!!";
+                            system("pause");
+                            exit();
+
+                        }
+            }
+        }while(attempt < 3);
 }
 
 void Prison ::SetData()
@@ -226,7 +225,7 @@ void Prison ::SetData()
     cout << "\t\t\t\t\t";
     o = o + 1;
     cout << "Press 1 to return : ";
-    scanf("%d", &s);
+    cin >> s;
     if (s == 1)
     {
         Prison ::Afterlogin();
@@ -260,7 +259,7 @@ void Prison ::Details()
     cout << "\n\t\t\t\t\t";
 
     cout << "\n===========================================================================================================\n";
-    cout << "SR.\tNAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment\n";
+    cout << "SN.\tNAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment\n";
     cout << "===========================================================================================================\n";
 
     for (int x = 0; x <= 19; x++)
@@ -286,7 +285,7 @@ void Prison ::Details()
     cout << "\n";
     cout << "\t\t\t\t\t";
     cout << "Press 1 to return : ";
-    scanf("%d", &s);
+    cin >> s;
     if (s == 1)
     {
         Prison::Afterlogin();
@@ -339,7 +338,7 @@ void Prison ::Attendance()
         {
             cout << "\n\t\t\t\t\t";
             cout << "Enter the cell  block of the prisoner :";
-            scanf("%d", &l);
+            cin >> l;
             l = l - 1001;
             cout << "\n\t\t\t\t\t";
             cout << "Name : ";
@@ -382,7 +381,7 @@ void Prison ::Attendance()
     cout << "\n";
     cout << "\t\t\t\t\t";
     cout << "Press 1 to return : ";
-    scanf("%d", &s);
+    cin >> s;
     if (s == 1)
     {
         Prison::Afterlogin();
@@ -435,7 +434,7 @@ void Prison ::Release()
         {
             cout << "\n\t\t\t\t\t";
             cout << "Enter the cell block of the prisoner :";
-            scanf("%d", &l);
+            cin >> l;
             l = l - 1001;
             cout << "\n\t\t\t\t\t";
             cout << "Name : ";
@@ -506,7 +505,7 @@ void Prison ::Release()
     cout << "\n";
     cout << "\t\t\t\t\t";
     cout << "Press 1 to return : ";
-    scanf("%d", &s);
+    cin >> s;
     if (s == 1)
     {
         Prison::Afterlogin();
@@ -572,7 +571,7 @@ void Prison ::SearchPrison()
     cout << "\n";
     cout << "\t\t\t\t";
     cout << "Press 1 to return : ";
-    scanf("%d", &s);
+    cin >> s;
     if (s == 1)
     {
         Prison::Afterlogin();
@@ -600,12 +599,7 @@ void Prison ::PrisonFile()
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t|                     2)   Html File                            |" << endl;
-    cout << "\t\t\t\t|                                                               |" << endl;
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
-    cout << "\t\t\t\t|                     3)   Word File                            |" << endl;
+    cout << "\t\t\t\t|                     2)   Word File                            |" << endl;
     cout << "\t\t\t\t|                                                               |" << endl;
     for (a = 0; a <= 100000000; a++)
     {
@@ -672,65 +666,6 @@ void Prison ::PrisonFile()
         break;
 
     case 2:
-        Time();
-        system("cls");
-        cout << "\t\t\t\t\t";
-        cout << "\n";
-        cout << "\t\t\t\t\t";
-        cout << "\n\n\n\n\n";
-        cout << "\t\t\t\t    -----------------------------------------------------\n";
-        cout << "\t\t\t\t    |                                                   |\n";
-        cout << "\t\t\t\t    |          Html File created successfully           |\n";
-        cout << "\t\t\t\t    |                                                   |\n";
-        cout << "\t\t\t\t    -----------------------------------------------------\n";
-
-        MyFile_.open("Prison_Data.html");
-
-        MyFile_ << "\t\t\t\t    -----------------------------------------------------";
-        MyFile_ << "\t\t\t\t    |                                                   |";
-        MyFile_ << "\t\t\t\t    |                Prisoner list                      |";
-        MyFile_ << "\t\t\t\t    |                                                   |";
-        MyFile_ << "\t\t\t\t    -----------------------------------------------------";
-        MyFile_ << "<br>";
-
-        for (int x = 0; x <= 19; x++)
-        {
-            if (First_Name[x] != " ")
-            {
-                MyFile_ << "First name: " << First_Name[x];
-                MyFile_ << "<br>";
-                MyFile_ << "Second name: " << Second_Name[x];
-                MyFile_ << "<br>";
-                MyFile_ << "Cell number: " << CellNo[x];
-                MyFile_ << "<br>";
-                MyFile_ << "Age: " << Age[x];
-                MyFile_ << "<br>";
-                MyFile_ << "Gender: " << Gender[x];
-                MyFile_ << "<br>";
-                MyFile_ << "Height: " << Height[x];
-                MyFile_ << "<br>";
-                MyFile_ << "Eye colour: " << Eyecolor[x];
-                MyFile_ << "<br>";
-                MyFile_ << "Crime: " << Crime[x];
-                MyFile_ << "<br>";
-                MyFile_ << "Punishment Months: " << Punishmentmonths[x];
-                MyFile_ << "<br>";
-                MyFile_ << "<br>";
-                c++;
-            }
-        }
-        if (c == 0)
-        {
-
-            MyFile_ << "<br>\t\t\t\t\t";
-            MyFile_ << "No prisoner Present";
-            MyFile_ << "<br>";
-            MyFile_ << "\t\t\t\t\t";
-        }
-        MyFile_.close();
-        break;
-
-    case 3:
         Time();
         system("cls");
         cout << "\t\t\t\t\t";
