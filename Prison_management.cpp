@@ -98,7 +98,7 @@ void Prison::Login()
     int i;
             for (i = 0;    ;    )
             {
-                cin >> temppass;
+                temppass=getch();
                     if((temppass >= 'a' && temppass <= 'z') || (temppass >= 'A' && temppass <= 'Z') || (temppass >= '0' &&  temppass <= '9'))
                         {
                             password[i] = temppass;
