@@ -907,10 +907,17 @@ void FrontPage()
     {
     }
     cout << "   Prison Management System";
-    cout << "\n\n";
+    cout << endl<<endl;
     cout << "\t\t\t\t";
-    cout << "\n\n";
-    cout << "\n\n";
+    cout << endl<<endl;
+    cout << "\t\t\t\t";
+    cout<<"Major Contributers:"<<endl;
+    cout << "\t\t\t\t Binay Shrestha(790403)";
+    cout << "\t\t\t\tPratistha Prajapati(790413)";
+    cout << "\t\t\t\tRajeev Suwal(790414)";
+     cout << endl<<endl;
+    cout << "\t\t\t\t";
+    cout << endl<<endl;
     cout << "\t\t\t\t";
     system("pause");
     cout << "\n\t\t\t\tLoading";
