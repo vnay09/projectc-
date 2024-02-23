@@ -510,9 +510,7 @@ void Prison ::Release()
 void Prison ::SearchPrison()
 {
     int info;
-    int CN, i, a, s, l;
-    int c = 0, p = 0;
-
+    int CN,a, s, l;
     system("cls");
     cout << "\t\t\t\t    ----------------------------------------" << endl;
     for (a = 0; a <= 100000000; a++)
