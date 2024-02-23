@@ -257,7 +257,7 @@ void Prison ::Details()
     cout << "\n\t\t\t\t\t";
 
     cout << endl << "===========================================================================================================" << endl;
-    cout << "SN.\tNAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
+    cout << "SN.\tNAME\t\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
     cout << "==========================================================================================================="<< endl;
 
     for (int x = 0; x <= 19; x++)
@@ -265,7 +265,7 @@ void Prison ::Details()
         if (First_Name[x] != " ")
         {
             p++;
-            cout << p << "\t" << First_Name[x] << "" << Second_Name[x] << "\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
+            cout << p << "\t" << First_Name[x] << " " << Second_Name[x] << "\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
             cout << endl << endl;
             c++;
         }
@@ -319,13 +319,13 @@ void Prison ::Attendance()
 
         cout << endl << "\t\t\t\t\t";
         cout << endl << "===========================================================================================================" << endl;
-        cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
+        cout << "NAME\t\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
         cout << "===========================================================================================================" << endl;
         for (int x = 0; x <= 19; x++)
         {
             if (First_Name[x] != " ")
             {
-                cout << First_Name[x] << "" << Second_Name[x] << "\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
+                cout << First_Name[x] << " " << Second_Name[x] << "\t\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
                 cout << endl << endl;
                 c++;
             }
@@ -413,14 +413,14 @@ void Prison ::Release()
 
         cout << endl << "\t\t\t\t\t";
         cout << endl <<"===========================================================================================================" << endl;
-        cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
+        cout << "NAME\t\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
         cout << "===========================================================================================================" << endl;
 
         for (int x = 0; x <= 19; x++)
         {
             if (First_Name[x] != " ")
             {
-                cout << First_Name[x] << "" << Second_Name[x] << "\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
+                cout << First_Name[x] << " " << Second_Name[x] << "\t\t\t" << CellNo[x] << "\t\t" << Age[x] << "\t" << Gender[x] << "\t" << Height[x] << "\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
                 cout << endl << endl;
                 c++;
             }
@@ -532,7 +532,7 @@ void Prison ::SearchPrison()
     cin >> CN;
     cout << endl <<"\t\t\t\t";
     cout << endl << "===========================================================================================================" << endl;
-    cout << "NAME\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
+    cout << "NAME\t\t\t\tCell Block\tAge\tGender\tHeight\tEye Colour\tCrime\tPunishment" << endl;
     cout << "===========================================================================================================" << endl;
     l = CN - 1001;
     info = CellNo[l];
@@ -540,7 +540,7 @@ void Prison ::SearchPrison()
     {
         if (First_Name[l] != " ")
         {
-            cout << First_Name[l] << "" << Second_Name[l] << "\t\t" << CellNo[l] << "\t\t" << Age[l] << "\t" << Gender[l] << "\t" << Height[l] << "\t" << Eyecolor[l] << "\t\t" << Crime[l] << "\t\t" << Punishmentmonths[l] << endl;
+            cout << First_Name[l] << " " << Second_Name[l] << "\t\t\t" << CellNo[l] << "\t\t" << Age[l] << "\t" << Gender[l] << "\t" << Height[l] << "\t" << Eyecolor[l] << "\t\t" << Crime[l] << "\t\t" << Punishmentmonths[l] << endl;
             cout << endl << endl;
         }
         else
@@ -635,7 +635,7 @@ void Prison ::PrisonFile()
         MyFile_ << "\n\t\t\t\t\t";
 
         MyFile_ << "\n=====================================================================================================================\n";
-        MyFile_ << "SR.\tNAME\t\t\tCell Block\tAge\t\tGender\tHeight\tEye Colour\tCrime\tPunishment\n";
+        MyFile_ << "SR.\tNAME\t\t\t\tCell Block\tAge\t\tGender\tHeight\tEye Colour\tCrime\tPunishment\n";
         MyFile_ << "=======================================================================================================================\n";
 
         for (int x = 0; x <= 19; x++)
@@ -643,7 +643,7 @@ void Prison ::PrisonFile()
             if (First_Name[x] != " ")
             {
                 p++;
-                MyFile_ << p << "\t" << First_Name[x] << "" << Second_Name[x] << "\t\t" << CellNo[x] << "\t" << Age[x] << "\t\t" << Gender[x] << "\t" << Height[x] << "\t\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
+                MyFile_ << p << "\t" << First_Name[x] << " " << Second_Name[x] << "\t\t\t" << CellNo[x] << "\t" << Age[x] << "\t\t" << Gender[x] << "\t" << Height[x] << "\t\t" << Eyecolor[x] << "\t\t" << Crime[x] << "\t\t" << Punishmentmonths[x] << endl;
                 MyFile_ << endl
                         << endl;
                 c++;
@@ -874,15 +874,15 @@ void FrontPage()
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t    ----------------------------------------\n";
+    cout << "\t\t\t\t    ----------------------------------------"<<endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t    |   PRISON STATION MANAGEMENT SYSTEM   |\n";
+    cout << "\t\t\t\t    |   PRISON STATION MANAGEMENT SYSTEM   |"<<endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
-    cout << "\t\t\t\t    ----------------------------------------\n";
+    cout << "\t\t\t\t    ----------------------------------------"<<endl;
     for (a = 0; a <= 100000000; a++)
     {
     }
