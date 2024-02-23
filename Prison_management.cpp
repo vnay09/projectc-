@@ -906,9 +906,9 @@ void FrontPage()
     cout << endl<<endl;
     cout << "\t\t\t\t";
     cout<<"Major Contributers:"<<endl;
-    cout << "\t\t\t\t Binay Shrestha(790403)";
-    cout << "\t\t\t\tPratistha Prajapati(790413)";
-    cout << "\t\t\t\tRajeev Suwal(790414)";
+    cout << "\t\t\t\tBinay Shrestha(790403)"<<endl;
+    cout << "\t\t\t\tPratistha Prajapati(790413)"endl;
+    cout << "\t\t\t\tRajeev Suwal(790414)"<<endl;
      cout << endl<<endl;
     cout << "\t\t\t\t";
     cout << endl<<endl;
