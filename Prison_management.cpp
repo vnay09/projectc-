@@ -906,6 +906,7 @@ void FrontPage()
     cout << "\t\t\t\tBinay Shrestha(790403)" << endl;
     cout << "\t\t\t\tPratistha Prajapati(790413)"<< endl;
     cout << "\t\t\t\tRajeev Suwal(790414)"<< endl;
+    cout << "\t\t\t\tLuniva Maharjan(790409)"<< endl;
      cout << endl<<endl;
     cout << "\t\t\t\t";
     cout << endl<<endl;
